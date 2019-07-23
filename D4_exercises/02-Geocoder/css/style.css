@@ -1,0 +1,20 @@
+/* TODO: Put your CSS code in here */
+
+body{
+    background: #F0F1F5;
+    padding-top: 50px;
+  }
+  #map { 
+    /* position:absolute;  */
+    top:50px; 
+    width:100%;
+    margin: 0 auto; 
+    height: 300px;
+  }
+
+.mapboxgl-canvas {
+  width: 900px;
+  border: 2px solid black;
+  border-radius: 10px;
+
+}
