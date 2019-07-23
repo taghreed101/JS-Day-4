@@ -2,5 +2,9 @@
   "name": "03-Weather",
   "version": "1.0.0",
   "main": "lib/app.js",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "select2": "^4.0.8"
+  }
 }

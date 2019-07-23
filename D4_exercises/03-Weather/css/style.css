@@ -2,3 +2,12 @@
 .header {
   display: flex;
 }
+
+body{
+  background: #F0F1F5;
+  padding-top: 50px;
+}
+
+a:hover { 
+  background-color: red;
+}
