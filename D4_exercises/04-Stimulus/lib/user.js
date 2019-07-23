@@ -1,5 +1,5 @@
 class User {
-  // TODO: your code!class Rectangle {
+
   constructor(firstName, lastName) {    
     this.firstName = firstName;
     this.lastName = lastName;

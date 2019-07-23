@@ -28,7 +28,7 @@ var location;
         .addTo(map);
           });
 
-  //document.getElementById("your-message").value;
+ 
   
 
   event.preventDefault();

@@ -40,12 +40,6 @@ $("#city-input").select2({
   data: cities
 });
 
-
-
-
-
-
-
 var currentTemp = document.querySelector("#currentlocation");
 currentTemp.addEventListener("click", locationWeather);
 var form = document.getElementById("weather-form");
