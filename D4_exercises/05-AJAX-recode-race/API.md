@@ -42,7 +42,7 @@ A Hash of information containing the id of the game and the players like:
           "elapsed_time": null,
           "players": [
              {
-                "id": 1,
+                "id": 1,Session
                 "name": "The Flash"
              },
              {

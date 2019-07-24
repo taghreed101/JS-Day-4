@@ -1,6 +1,10 @@
 // TODO: write your code here
 
 
+
+
+
+
 document.addEventListener("keyup", logKey);
 
 function logKey(x) {
