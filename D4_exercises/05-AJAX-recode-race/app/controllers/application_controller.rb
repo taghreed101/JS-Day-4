@@ -1,3 +1,5 @@
+require "byebug"
+
 class ApplicationController < Sinatra::Base
 
   register Sinatra::ActiveRecordExtension
@@ -11,10 +13,11 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-
+    erb :home 
   end
 
   post '/sessions', provides: [:json] do
+    byebug
 
   end
 
@@ -33,6 +36,5 @@ class ApplicationController < Sinatra::Base
   patch '/games/:id/finish', provides: [:json] do
 
   end
-end
 
 end

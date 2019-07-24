@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-  
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
+    <title>Recode Racer 🏎</title>
 
-</body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1 class="text-center">Recode Racer</h1>
+    <hr>
+    <!-- You race HTML code here -->
+    <%# <div class="button-container">
+        <button class="btn btn-secondary"> click here</button>
+    </div> %>
 
+     <div  class="wrap-contact100">
+            <form method="POST" action="/sessions " class="contact100-form validate-form">
+                <span class="contact100-form-title">
+                    Enter your names below
+                </span>
+
+                <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+                    <input id = "player1" class="input100" type="text" name="player1_name" placeholder="Player 1 name">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Please enter your phone">
+                    <input id= "player2" class="input100" type="text" name="player2_name" placeholder="player 2 name">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                   
+                        <button type="submit" class="contact100-form-btn">
+                            <span>Start Game!</span>
+                        </button>
+                    </a>
+                </div>
+            </form>
+        </div>
+
+    <table id = "page3" class="game-table" class="racer_table" >
+      <tr id="player1_race">
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        
+      </tr>
+      <tr id="player2_race">
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td ></td>
+      
+      </tr>
+    </table>
+
+
+    <hr>
+
+    <script src="/js/game.js"></script>
+  </body>
 </html>

@@ -8,14 +8,21 @@
     <title>Stimulus 101</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
 
     <!-- TODO: Put your HTML code in here -->
-    <button id="clickme" class="btn btn-primary btn-lg">
+    <div data-controller="zelda" data-zelda-sound="secret.mp3">
+      <button    data-target="zelda.trigger" data-action="click->zelda#play" class="btn btn-primary btn-lg">
         Click me!
       </button>
+    </div>
+    <div data-controller="zelda" data-zelda-sound="treasure.mp3">
+      <button data-action="click->zelda#play" data-target="zelda.trigger" class="btn btn-success btn-lg">
+        Treasure!
+      </button>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
