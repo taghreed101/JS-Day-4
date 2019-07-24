@@ -17,26 +17,32 @@
     <%# <div class="button-container">
         <button class="btn btn-secondary"> click here</button>
     </div> %>
+    <div class="button-container">
+ <form method="POST" action="/sessions" >
 
-     <div  class="wrap-contact100">
-            <form method="POST" action="/sessions " class="contact100-form validate-form">
+<button id = "new-game" type="submit" class="btn btn-primary btn-lg">Start New Game</button>
+ </form>
+ </div>
+
+     <div id="palyerform" class="players-form wrap-contact100">
+            <form method="POST" action="/sessions/:id/games" class="contact100-form validate-form">
                 <span class="contact100-form-title">
                     Enter your names below
                 </span>
 
-                <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+                <div class="wrap-input100 validate-input" >
                     <input id = "player1" class="input100" type="text" name="player1_name" placeholder="Player 1 name">
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Please enter your phone">
+                <div class="wrap-input100 validate-input" >
                     <input id= "player2" class="input100" type="text" name="player2_name" placeholder="player 2 name">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="container-contact100-form-btn">
                    
-                        <button type="submit" class="contact100-form-btn">
+                        <button id="start-game" type="submit" class="contact100-form-btn">
                             <span>Start Game!</span>
                         </button>
                     </a>
@@ -44,7 +50,7 @@
             </form>
         </div>
 
-    <table id = "page3" class="game-table" class="racer_table" >
+    <table id = "board" class="game-table racer_table" >
       <tr id="player1_race">
         <td class="active"></td>
         <td></td>

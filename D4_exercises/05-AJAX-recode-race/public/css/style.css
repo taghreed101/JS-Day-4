@@ -17,7 +17,18 @@
   table, th, td {
     border: 1px solid black;
   }
+.start-form {
+  display :none;
+}
 
+.players-form {
+display :none;
+}
+
+
+.players--supported .players-form{
+  display: initial;
+}
 
 .game-table {
   display: none;

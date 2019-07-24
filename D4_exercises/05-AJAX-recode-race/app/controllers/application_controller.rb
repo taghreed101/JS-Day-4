@@ -17,12 +17,15 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/sessions', provides: [:json] do
-    byebug
-
+  
+    @session = Session.create()
+    # byebug
+    {:session => @session}.to_json
+   
   end
 
   get '/sessions/:id/games', provides: [:json] do
-
+    byebug
   end
 
   get '/games/:id/results', provides: [:json] do
@@ -30,6 +33,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/sessions/:id/games', provides: [:json] do
+    byebug
 
   end
 
