@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 2019_07_24_052245) do
   end
 
   create_table "sessions", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

@@ -17,15 +17,15 @@
   table, th, td {
     border: 1px solid black;
   }
- 
-.score-board{
-  display: none;
-}
+
  
 .start-form {
   display :none;
 }
-
+ 
+.sc{
+  display: none;
+}
 .players-form {
 display :none;
 }

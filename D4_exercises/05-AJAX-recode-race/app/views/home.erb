@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Recode Racer 🏎</title>
+    <title>Recode Racer </title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -18,10 +18,10 @@
         <button class="btn btn-secondary"> click here</button>
     </div> %>
     <div class="button-container">
- <form method="POST" action="/sessions" >
+ 
 
 <button id = "new-game" type="submit" class="btn btn-primary btn-lg">Start New Game</button>
- </form>
+
  </div>
 
      <div id="palyerform" class="players-form wrap-contact100">
@@ -49,9 +49,9 @@
                 </div>
             </form>
         </div>
-
+     <h2 id="countdown"></h2> 
     <table id = "board" class="game-table racer_table" >
-      <tr id="player1_race">
+      <tr id="player1_race" >
         <td class="active"></td>
         <td></td>
         <td></td>
@@ -74,10 +74,16 @@
       
       </tr>
     </table>
-
+    </div>
 
     <hr>
-
+  <form id ="sboard" class="start-form">
+   <h3 id="winner_name"></h3>
+   <h3 id="time_taken"></h3>
+   <h3 id="game_id"></h3>
+   <button id = "play-agin" type="submit" class="score_board btn btn-primary btn-lg">Play agin</button> 
+  </form>
+ 
     <script src="/js/game.js"></script>
   </body>
 </html>
